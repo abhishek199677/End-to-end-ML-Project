@@ -70,8 +70,8 @@ def save_json(path: Path, data: dict):
         json.dump(data, f, indent=4)
     logger.info(f"json file saved at: {path}")
 
-`@ensure_annotations
-def load_json(path: Path) -> ConfigBox:`
+@ensure_annotations
+def load_json(path: Path) -> ConfigBox:
     """
     Load json files data
     Args:
